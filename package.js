@@ -11,7 +11,6 @@ Package.on_use(function (api, where) {
 });
 
 Package.on_test(function (api) {
-  api.use('meteor-sortable');
 
   api.add_files('meteor-sortable_tests.js', ['client', 'server']);
 });
