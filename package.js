@@ -1,16 +1,21 @@
 
 Package.describe({
-  summary: "Sortable, a lightwieght javascript library for reordering and sorting using the native HTML5 drag and drop API"
+  // Short two-sentence summary.
+  summary: "Sortable, a lightwieght javascript library for reordering and sorting using the native HTML5 drag and drop API",
+  // Version number.
+  version: "0.0.5",
+  // Optional.  Default is package directory name.
+  name: "fish:sortable",
+  // Optional github URL to your source repository.
+  git: "https://github.com/fishdude/meteor-sortable.git",
 });
 
-Package.on_use(function (api, where) {
+/* This defines your actual package */
+Package.onUse(function (api) {
   
+  api.versionsFrom('0.9.0');
+  
+  api.use('application-configuration@1.0.0');
 
-  api.add_files('lib/Sortable.min.js', 'client');
-
-});
-
-Package.on_test(function (api) {
-
-  api.add_files('meteor-sortable_tests.js', ['client', 'server']);
+  api.addFiles('lib/Sortable.min.js', 'server');
 });
