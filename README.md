@@ -1,7 +1,7 @@
 meteor-sortable
 ===============
 
-**Meteor package for Sortable.js -  a lightwieght javascript library for reordering and sorting using the native HTML5 drag and drop API.**
+**Meteor package for Sortable.js -  a lightweight javascript library for reordering and sorting using the native HTML5 drag and drop API.**
 
 * Live demo: http://rubaxa.github.io/Sortable/
 * Source: https://github.com/RubaXa/Sortable
